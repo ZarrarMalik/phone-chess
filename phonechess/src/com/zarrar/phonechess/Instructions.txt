@@ -1,0 +1,33 @@
+-----------------------------------Phone Chess-------------------------------------------
+This Java project consist of 8 classes, 1 class is partially completed (Rook).
+These classes are:
+1. PhonePad: Defines the PhonePad properties. It takes a number and (Java Point class) X and Y for coordinates. 
+2. PieceMovement: Is an interface, defines the methods (4) each chess pieces have to implement.
+3. ChessPiece: Is as abstract class which implements Piecemovemnt interface. All these properties are common among all chess pieces. 
+		They all override these properties and methods. 
+4. ChessPieceWorkshop: Class defines which chess piece is under consideration. Switch statement lets you choose one of the options. 
+5. Knight: Defines all the movements of the Knight on a Phone pad. It Implements all the methods defined in PieceMovement
+6. ChessPhoneNumbers: Is an entry class, which starts the proceedings after input. 
+7. PhoneChessMain: This class has the main method. This class has all the possible PhonePad coordinates. 
+8. Rook: This is an incomplete class, but has an outline to show how the Rook will be designed. 
+
+PhoneChess how to run instructions?
+1. The program has only been tested and run in eclipse environment.   
+2. By default the input is set as:
+   ChessPhoneNumbers chessPhoneNumbers = new ChessPhoneNumbers(thePad, "Knight");
+   System.out.println(chessPhoneNumbers.findPossibleDigits(thePad[0][1], 10));
+3. pad location [0][1] refers to "2" on phonepad. 
+                thePad[0][0] ="1"
+		thePad[0][1] ="2"
+		thePad[0][2] ="3"
+		thePad[1][0] ="4"
+		thePad[1][1] ="5"
+		thePad[1][2] ="6"
+		thePad[2][0] ="7"
+		thePad[2][1] ="8"
+		thePad[2][2] ="9"
+		thePad[3][0] ="*"
+		thePad[3][1] ="0"
+		thePad[3][2] ="#"
+4. A new location can be piecked and inserted to change the results.
+5. 10 refers to the 10 digits phone number, it can be changed to any number
